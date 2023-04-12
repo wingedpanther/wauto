@@ -12,7 +12,6 @@ wa_msg = ""
 #Get message from text file
 with open ("G:\Whauto\data\msg.txt", "r",encoding="utf8") as msg_file:
     msg_body = msg_file.read().replace('\n', '')
-    #print (msg_body)
     wa_msg = msg_body
 
 #Function for opening whatsapp and send the message 
@@ -23,103 +22,112 @@ def send_whatsapp_message(mobile_num):
     time.sleep(2) # 2 secs delay
     
     # Store the string to the clipboard(becasue typewriter fucntion does not type Arabic content)
-    # pyperclip.copy(msg_body)
     # Hotkey the paste command
     
     
     #ARABIC MESSAGE#
-    pyautogui.typewrite("مرحبا")
+    pyperclip.copy('')
     pyautogui.hotkey("shift", "enter")
-    pyperclip.copy(" المعلومات دعوة جميع أصحاب الأعمال الحرة المتخصصين للتسجيل في تطبيق سعودي جديد خاص بمقدمي الخدمات.")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("هذا التطبيق سيمنحك")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  1.) تسويق مجاني")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  2.) بيئة آمنة وعمليات موثوقة")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  3.) العمل في الوقت الذي يناسبك")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  4.)  لا يوجد رسوم اشتراك")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  5.) أنت من يحدد رسوم الخدمة التي تقدمها")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("  6.) رسوم الخدمة يتم تحويلها حسابك البنكي")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy(" 7.) بإمكانك إدارة حسابك ومعلوماتك ضمن التطبيق")
+    pyperclip.copy("مرحبا حنا نافع 👋 نافع 📱 تطبيق يسهل لاصحاب العمل الحر زيادة دخلهم والوصول الى العملاء بسهوله وراحة بال")
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
     pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("إذا كنت ممن يملكون الخبرة والمهارة في نوعية الخدمة التي تقدمها، بإمكانك تقديم طلب الاشتراك المبدئي من خلال الرابط التالي")
-    pyautogui.hotkey("ctrl", "v")
-    pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("####")
+    pyperclip.copy("💡 طيب ليه نافع؟")
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
     pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("_سنقوم بإبلاغك فور إطلاق التطبيق بشكل رسمي._")
+    pyperclip.copy("⭐ راح نسوق لك مجاناً")
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("حظا طيبا")
+    pyperclip.copy("⭐ نقوي ثقة العملاء في اصحاب العمل الحر")
     pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyperclip.copy("وشكرا")
+    pyperclip.copy("⭐ تقدر تشتغل في الوقت اللي يناسبك")
     pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("⭐ مافيه رسوم اشتراك")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("⭐ انت تحدد اسعار الخدمات بنفسك")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("⭐ كل المبالغ تتحول لحسابك البنكي")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("⭐ انت مدير حسابك داخل التطبيق وتديره بطريقة الي تناسبك")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("اذا عندك الموهبة والمهارة، سجل معنا عن طريق تحميل البرنامج من متجر ابل او قوقل بلاي ")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("http://onelink.to/qjwqxp")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("ونتمنى لك يوم سعيد.")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+
     #END OF ARABIC
+    pyperclip.copy('')
     pyautogui.press('enter')
 
-    #English Content# hardcoding the contetnt to get a well formatted message otherwise message will not looking good to read
-    #
-    pyautogui.typewrite("Hello,")
+    #English Content# hardcoding the contetnt to get a well formatted message otherwise message will not look good to read
+    
+    pyautogui.typewrite("")
+    pyperclip.copy("Hello, there 👋, We are Nafae 📱  - An app that helps you to work as a freelancer with peace of mind.")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("##### is pleased to invite all freelance professional service providers to join our upcoming local service provider application exclusively developed for Saudi Arabia. The advantages of our app are,")
+
+    pyperclip.copy("💡 Why Nafae?")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  1.) You will get free marketing")
+    
+    pyperclip.copy("⭐ You will get free marketing")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  2.) A reliable & trustworthy relationship")
+    pyperclip.copy("⭐ A reliable & trustworthy relationship")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  3.) You can work on your time")
+    pyperclip.copy("⭐ You can work on your time")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  4.) You decide the service charge for your work")
+    pyperclip.copy("⭐ No subscription charges")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  5.) All payments will transfer to your bank account")
+    pyperclip.copy("⭐ You decide the service charge for your work")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("  6.) You can manage everything within the application itself and a lot more")
+    pyperclip.copy("⭐ All payments will transfer to your bank account")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("If you have the skill and you are professional in it. Feel free to submit your application in the following form.")
-    pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("Service provider registration ######")
-    pyautogui.hotkey("shift", "enter")
-    pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("_Please note that we will notify you once the app gets published in the application markets_")
+    pyperclip.copy("⭐ You can manage everything within the application itself and a lot more.")
+    pyautogui.hotkey("ctrl", "v")
     pyautogui.hotkey("shift", "enter")
     pyautogui.hotkey("shift", "enter")
-    pyautogui.typewrite("Good Luck! & Thank you")
+ 
+    pyperclip.copy("If you have the skill and you are professional in it, feel free to enrol in our app by downloading from the AppStore or Google play")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyperclip.copy("http://onelink.to/qjwqxp")
+    pyautogui.hotkey("ctrl", "v")
+    pyautogui.hotkey("shift", "enter")
+    pyautogui.hotkey("shift", "enter")
+    
+    
+    pyautogui.typewrite("Have a nice day!")
     time.sleep(1) # 1 secs delay
+    pyperclip.copy('')
     pyautogui.press('enter')
 
-    #pyautogui.hotkey("ctrl", "v")
-    #pyautogui.typewrite(wa_msg)# works for English
-
-   
-    #pyautogui.press('enter')
-
+    
 #Get mobile numbers from excel
-df = pd.read_excel(r'G:\Whauto\data\mob.xlsx')
+df = pd.read_excel(r'E:\AFNAM\NAFAE APP\WhatsApp Marketing\Data\Test.xlsx')
 #print(df)
 
 for index, row in df.iterrows():
    # print (row['mob'])
-    send_whatsapp_message(row['mob'])
-
+    send_whatsapp_message(row[0])
