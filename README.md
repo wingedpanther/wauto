@@ -7,7 +7,7 @@ Install the following Python libraries:
  - pandas
  - pyautogui
  - pyperclip
-Download and install the WhatsApp desktop software.(⚠️WhatsApp web will not work)
+ - Download and install the WhatsApp desktop software.(⚠️WhatsApp web will not work)
 ## How to Use
  - Ensure WhatsApp desktop is connected with a number.
  - Clone the repository.
