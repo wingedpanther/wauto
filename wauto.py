@@ -125,7 +125,7 @@ def send_whatsapp_message(mobile_num):
 
     
 #Get mobile numbers from excel
-df = pd.read_excel(r'E:\AFNAM\NAFAE APP\WhatsApp Marketing\Data\Test.xlsx')
+df = pd.read_excel(r'E:\WhatsApp Marketing\Data\Test.xlsx')
 #print(df)
 
 for index, row in df.iterrows():
