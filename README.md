@@ -1,4 +1,4 @@
-## Whatsapp Bulk Message Sender
+## WhatsApp Bulk Message Sender
 This is a Python script that can be used to automate the sending of messages to multiple phone numbers stored in an Excel file. The script uses the WhatsApp desktop software to send messages.
 
 ## Prerequisites
